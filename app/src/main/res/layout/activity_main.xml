@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="229dp"
+        android:layout_height="411dp"
+        android:contentDescription="@string/imagen_de_andy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/andy_completo"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonFlight"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#0957DA"
+        android:drawableLeft="@drawable/avion_off"
+        android:text="@string/turn_off_flight_mode"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/ButtonUpdating"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#DA0C0C"
+        android:drawableLeft="@drawable/reload"
+        android:text="@string/updating_profile"
+        app:layout_constraintStart_toEndOf="@+id/buttonFlight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPictureSave"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#B1A9A9"
+        android:text="@string/picture_saved_to_gallery"
+        android:textColor="#4E342E"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFlight" />
+
+    <Button
+        android:id="@+id/buttonUnlocked5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#5A2A2A"
+        android:text="@string/unlocked_level_5"
+        app:layout_constraintStart_toEndOf="@+id/buttonPictureSave"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonUpdating" />
+
+    <Button
+        android:id="@+id/buttonMusicPause"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#71B547"
+        android:drawableLeft="@drawable/pause"
+        android:text="@string/music_paused"
+        android:textColor="#4E342E"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonLevel4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUnlocked5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonLevel4"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/star_button"
+        android:drawableRight="@drawable/star_button"
+        android:text="@string/level_4_completed"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPictureSave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
