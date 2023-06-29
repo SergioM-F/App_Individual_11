@@ -20,11 +20,14 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
         binding.buttonFlight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(MainActivity.this, "Modo Avion Apagado", Toast.LENGTH_SHORT).show();
+                toast("Modo Avion");
+
+                //Toast.makeText(MainActivity.this, "Modo Avion Apagado", Toast.LENGTH_SHORT).show();
             }
 
         });
@@ -32,38 +35,49 @@ public class MainActivity extends AppCompatActivity {
         binding.ButtonUpdating.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Actualizando Perfil", Toast.LENGTH_SHORT).show();
+
+                toast("Actualizando Perfil");
+                //Toast.makeText(MainActivity.this, "Actualizando Perfil", Toast.LENGTH_SHORT).show();
             }
         });
 
         binding.buttonMusicPause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Pausando Musica", Toast.LENGTH_SHORT).show();
+                toast("Pausando Musica");
+                //Toast.makeText(MainActivity.this, "Pausando Musica", Toast.LENGTH_SHORT).show();
             }
         });
 
         binding.buttonLevel4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Nivel 4 Completado", Toast.LENGTH_SHORT).show();
+                toast("Nivel 4 Completado");
+                //Toast.makeText(MainActivity.this, "Nivel 4 Completado", Toast.LENGTH_SHORT).show();
             }
         });
 
         binding.buttonPictureSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Fotografia Guardada en Galleria", Toast.LENGTH_SHORT).show();
+                toast("Fotografia guardada en Galleria");
+                //Toast.makeText(MainActivity.this, "Fotografia Guardada en Galleria", Toast.LENGTH_SHORT).show();
             }
         });
 
         binding.buttonUnlocked5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Nivel 5 Desbloqueado", Toast.LENGTH_SHORT).show();
+                toast("Nivel 5 Desbloqueado");
+                //Toast.makeText(MainActivity.this, "Nivel 5 Desbloqueado", Toast.LENGTH_SHORT).show();
             }
         });
 
+    }
+
+    private void toast(String msj) {
+
+        Toast.makeText(MainActivity.this, msj, Toast.LENGTH_SHORT).show();
     }
 }
 
