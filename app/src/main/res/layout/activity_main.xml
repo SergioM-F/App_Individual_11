@@ -28,6 +28,8 @@
         android:text="@string/turn_off_flight_mode"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#020202"
+        app:strokeWidth="1dp"
         tools:ignore="TextSizeCheck" />
 
     <Button
@@ -40,7 +42,9 @@
         android:drawableLeft="@drawable/reload"
         android:text="@string/updating_profile"
         app:layout_constraintStart_toEndOf="@+id/buttonFlight"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/buttonPictureSave"
@@ -53,7 +57,9 @@
         android:textColor="#4E342E"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/buttonFlight" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonFlight"
+        app:strokeColor="#F80202"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/buttonUnlocked5"
@@ -64,7 +70,9 @@
         android:backgroundTint="#5A2A2A"
         android:text="@string/unlocked_level_5"
         app:layout_constraintStart_toEndOf="@+id/buttonPictureSave"
-        app:layout_constraintTop_toBottomOf="@+id/ButtonUpdating" />
+        app:layout_constraintTop_toBottomOf="@+id/ButtonUpdating"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/buttonMusicPause"
@@ -79,6 +87,8 @@
         app:cornerRadius="0dp"
         app:layout_constraintStart_toEndOf="@+id/buttonLevel4"
         app:layout_constraintTop_toBottomOf="@+id/buttonUnlocked5"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -92,6 +102,8 @@
         android:text="@string/level_4_completed"
         app:cornerRadius="0dp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPictureSave" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonPictureSave"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
